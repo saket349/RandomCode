@@ -1,5 +1,8 @@
 total no of tree possible for given max height h is - <br>
  b(h,n)=∑i=1:n b(h−1,i−1)⋅b(h−1,n−i) <br>
+ <span>
+Note that we have b(0,0)=1, b(0,1)=1 and b(0,k)=0, for any integer k>1 and  b(k,0)=1 k>0, which takes care of boundary conditions.
+</span><br>
  Note: we are not considering permutation of nodes <br>
 ```
 #include<bits/stdc++.h>
